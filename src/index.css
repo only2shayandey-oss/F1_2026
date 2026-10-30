@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom telemetry glow and scanline utilities */
+.telemetry-glow {
+  box-shadow: 0 0 24px -4px rgba(0, 245, 212, 0.25);
+}
+
+.telemetry-glow-teal {
+  box-shadow: 0 0 24px -4px rgba(0, 161, 155, 0.35);
+}
+
+.titanium-border {
+  border-color: rgba(164, 179, 182, 0.16);
+}
+
+.dark .titanium-border {
+  border-color: rgba(164, 179, 182, 0.14);
+}
+
+/* Carbon subtle pattern for technical background */
+.carbon-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(164, 179, 182, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(164, 179, 182, 0.04) 1px, transparent 1px);
+}
+
+.dark .carbon-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(164, 179, 182, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(164, 179, 182, 0.035) 1px, transparent 1px);
+}

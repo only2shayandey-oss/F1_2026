@@ -1,0 +1,6 @@
+{
+  "name": "Silver Arrow Telemetry",
+  "description": "High-performance Formula 1 technical telemetry dashboard engineered for computational clarity, aerodynamic analytics, and precision race insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
